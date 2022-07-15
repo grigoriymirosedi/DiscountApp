@@ -11,15 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ShopsFragment : Fragment(){
 
-    val shopList = listOf(
-        ShopItem(R.drawable.image2, "krutoy1"),
-        ShopItem(R.drawable.image2, "krutoy2"),
-        ShopItem(R.drawable.image2, "krutoy3"),
-        ShopItem(R.drawable.image2, "krutoy4"),
-        ShopItem(R.drawable.image2, "krutoy5"),
-        ShopItem(R.drawable.image2, "krutoy6"),
-    )
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

@@ -15,12 +15,12 @@ class ShopItemAdapter : RecyclerView.Adapter<ShopItemAdapter.ViewHolder>() {
     }
 
     val shopList = listOf(
-        ShopItem(R.drawable.image2, "krutoy1"),
-        ShopItem(R.drawable.image2, "krutoy2"),
-        ShopItem(R.drawable.image2, "krutoy3"),
-        ShopItem(R.drawable.image2, "krutoy4"),
-        ShopItem(R.drawable.image2, "krutoy5"),
-        ShopItem(R.drawable.image2, "krutoy6"),
+        ShopItem(R.drawable.lenta, "Лента"),
+        ShopItem(R.drawable.okey, "krutoy2"),
+        ShopItem(R.drawable.magnit, "krutoy3"),
+        ShopItem(R.drawable.pyaterochka, "krutoy4"),
+        ShopItem(R.drawable.metro, "krutoy5"),
+        ShopItem(R.drawable.vkusvil, "krutoy6"),
     )
 
     fun setOnItemClickListener(listener: onItemClickListener){
@@ -38,8 +38,7 @@ class ShopItemAdapter : RecyclerView.Adapter<ShopItemAdapter.ViewHolder>() {
         }
 
         fun bind(shop: ShopItem){
-            //binding.shopImage.setImageResource(shop.ImageUrl)
-            binding.tv6.text = shop.Description
+            binding.shopImage.setImageResource(shop.ImageUrl)
         }
 
     }

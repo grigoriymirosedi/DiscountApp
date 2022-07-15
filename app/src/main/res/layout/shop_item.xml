@@ -7,29 +7,25 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/shopImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
 
-            <TextView
-                android:id="@+id/tv6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Название магазина"
-                android:textSize="24sp"
-                app:drawableTopCompat="@drawable/image2" />
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
